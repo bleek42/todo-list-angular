@@ -3,8 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'todo-list-angular';
+  appName: string;
+  author: string;
+
+  constructor() {
+    this.appName = 'angular todo list';
+    this.author = 'brandon leek';
+  }
 }
